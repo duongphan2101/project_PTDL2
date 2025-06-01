@@ -14,7 +14,7 @@ app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg'}
 
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-model_path = "./mnist_model.h5"
+model_path = "./mnist_model.keras"
 model = load_model(model_path, safe_mode=False)
 
 def allowed_file(filename):
